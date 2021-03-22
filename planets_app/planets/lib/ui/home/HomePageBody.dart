@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'planet.dart';
-import 'PlanetSummary.dart';
+import 'package:planets/model/Planet.dart';
+import 'package:planets/ui/common/PlanetSummary.dart';
 
 class HomePageBody extends StatelessWidget {
   @override
@@ -16,7 +16,7 @@ class HomePageBody extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: 24.0),
               sliver: new SliverList(
                 delegate: new SliverChildBuilderDelegate(
-                    (context, index) => new PlanetSummary(planets[index]),
+                  (context, index) => new PlanetSummary(planets[index]),
                   childCount: planets.length,
                 ),
               ),

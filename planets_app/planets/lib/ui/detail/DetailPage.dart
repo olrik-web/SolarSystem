@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:planets/textStyle.dart';
-import 'planet.dart';
-import 'planetsummary.dart';
-import 'separator.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:planets/ui/textStyle.dart';
+import 'package:planets/model/Planet.dart';
+import 'package:planets/ui/common/PlanetSummary.dart';
+import 'package:planets/ui/common/separator.dart';
 
 class DetailPage extends StatelessWidget {
   final Planet planet;
